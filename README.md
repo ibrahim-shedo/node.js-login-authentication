@@ -1,5 +1,5 @@
 Login Authentication Project
-Welcome to the Login Authentication project! This project is built using EJS for frontend templating, Tailwind CSS for styling, and Node.js with Express for the backend.
+Welcome to the Login Authentication project! This project is built using EJS for frontend templating, Tailwind CSS for styling, Node.js with Express for the backend, and MongoDB for the database.
 
 Overview
 This project aims to provide a simple and secure login authentication system. Users can register for an account, log in, and log out securely.
@@ -9,6 +9,7 @@ User registration: Users can sign up for an account with a unique username and p
 User authentication: Registered users can log in securely using their credentials.
 Session management: Sessions are maintained to keep users authenticated across multiple requests.
 Password hashing: Passwords are securely hashed before being stored in the database for enhanced security.
+Database: MongoDB is used as the database to store user information securely.
 Installation
 Clone this repository to your local machine:
 
@@ -30,6 +31,9 @@ makefile
 Copy code
 PORT=3000
 SESSION_SECRET=your_session_secret
+MONGODB_URI=your_mongodb_uri
+Replace your_mongodb_uri with your MongoDB connection string.
+
 Start the server:
 
 sql
@@ -44,6 +48,7 @@ Tailwind CSS: A utility-first CSS framework for rapid UI development.
 bcrypt.js: Library for hashing passwords before storing in the database.
 Express-session: Session middleware for Express to manage sessions.
 Connect-flash: Flash messages for Express to display notifications.
+Mongoose: Elegant MongoDB object modeling for Node.js.
 File Structure
 app.js: Main entry point of the application.
 routes/: Contains route handlers for different endpoints.
@@ -64,5 +69,5 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Acknowledgements
-Special thanks to the creators and maintainers of EJS, Tailwind CSS, Node.js, Express, and other dependencies used in this project.
+Special thanks to the creators and maintainers of EJS, Tailwind CSS, Node.js, Express, MongoDB, and other dependencies used in this project
 
