@@ -1,10 +1,55 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Business Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-     <h1>welcome to home page</h1>
+
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                <div>
+                    <a href="/" class="text-xl font-bold text-gray-800">Company Name</a>
+                </div>
+                <div>
+                    <a href="/login" class="text-gray-600 hover:text-gray-800 px-4">Login</a>
+                    <a href="/register" class="text-gray-600 hover:text-gray-800">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 px-4">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-8 bg-white shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Welcome to our Business</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec metus eu
+                    sapien convallis placerat.</p>
+            </div>
+            <div class="p-8 bg-white shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Our Services</h2>
+                <ul class="list-disc list-inside text-gray-600">
+                    <li>Service 1</li>
+                    <li>Service 2</li>
+                    <li>Service 3</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            &copy; 2024 Company Name. All rights reserved.
+        </div>
+    </footer>
+
 </body>
+
 </html>
